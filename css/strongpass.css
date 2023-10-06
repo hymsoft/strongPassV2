@@ -1,0 +1,112 @@
+body {
+  background-color: #ededed;
+  position: relative;
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.password-container {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.password-container:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.toast .toast-body {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.toast-success {
+  background-color: #28a745;
+}
+
+.toast-danger {
+  background-color: #dc3545;
+}
+
+.range-label {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  font-size: 24px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.ultimoParrafo {
+  text-align: justify;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%
+}
+
+.footer .social {
+  text-align: center;
+  /* padding-bottom: 25px; */
+}
+
+.footer .social a {
+  font-size: 24px;
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.copyright {
+  text-align: center;
+  margin: 0;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Generador de Contraseñas</title>
+  <!-- CSS de Bootstrap 5 -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- CSS de Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- CSS Propio -->
+  <link rel="stylesheet" href="./css/strongpass.css">
+
+</head>
+
+<body>
+  <h1>Generador de Contraseñas</h1>
+  <div class="container">
+    <main>
+      <div class="form-group">
+        <input type="range" class="form-range" id="length" min="6" max="15" value="12">
+        <div id="length-label" class="range-label">Longitud: 12</div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input type="checkbox" id="uppercase" class="form-check-input" checked>
+          <label class="form-check-label" for="uppercase">Incluir Mayúsculas</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="lowercase" class="form-check-input" checked>
+          <label class="form-check-label" for="lowercase">Incluir Minúsculas</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="numbers" class="form-check-input" checked>
+          <label class="form-check-label" for="numbers">Incluir Números</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="symbols" class="form-check-input" checked>
+          <label class="form-check-label" for="symbols">Incluir Símbolos</label>
+        </div>
+      </div>
+      <button id="generate" class="btn btn-primary">Generar Contraseña</button>
+      <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 11">
+    </main>
+  </div>
+  <section>
+    <div class="container">
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">¿Qué es un generador de contraseñas aleatorias?</div>
+            Un generador de contraseñas aleatorias es una herramienta que crea combinaciones únicas de caracteres al
+            azar para generar contraseñas seguras. Estas contraseñas suelen contener una combinación de letras
+            mayúsculas y minúsculas, números y caracteres especiales. Al utilizar un generador de contraseñas
+            aleatorias, se incrementa la dificultad de que alguien pueda adivinar o descifrar la contraseña.
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Use una contraseña diferente para cada sitio.</div>
+            Es importante utilizar una contraseña diferente para cada sitio web o servicio en el que te registres. Si
+            usas la misma contraseña en varios lugares y un sitio sufre una brecha de seguridad, los atacantes podrían
+            obtener acceso a tus otras cuentas. Al utilizar contraseñas únicas, limitas el daño potencial en caso de que
+            una cuenta sea comprometida.
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Use un generador de contraseñas para crear contraseñas seguras.</div>
+            La creación manual de contraseñas seguras puede ser difícil, por lo que se recomienda utilizar un generador
+            de contraseñas. Estas herramientas generarán una combinación aleatoria de caracteres que será difícil de
+            adivinar. Asegúrate de que la contraseña generada tenga una longitud adecuada y contenga una mezcla de
+            letras, números y caracteres especiales.
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Actualice sus contraseñas cuando sea necesario..</div>
+            Es importante actualizar regularmente tus contraseñas, especialmente si hay indicios de una posible
+            violación de seguridad. Si un servicio informa sobre una brecha de datos o sospechas que tu cuenta ha sido
+            comprometida, cambia tu contraseña de inmediato. Además, se recomienda cambiar las contraseñas cada cierto
+            tiempo, por ejemplo, cada 3-6 meses, como medida de precaución adicional.
+          </div>
+        </li>
+      </ol>
+      <p class="ultimoParrafo">Estas prácticas ayudan a mantener tus cuentas seguras y proteger tu información personal
+        en línea. Recuerda que
+        la seguridad en línea es importante y debe tomarse en serio para evitar posibles problemas y riesgos.</p>
+    </div>
+  </section>
+  <footer class="footer">
+    <p class="copyright">&copy; HyM Soft (2021 - <span id="current-year"></span>)</p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/hugo-antonio-segura-22099696" target="_blank" class="text-decoration-none">
+        <i class="bi bi-linkedin h3"></i>
+      </a>
+      <a href="https://twitter.com/Hymsoft" target="_blank" class="text-decoration-none">
+        <i class="bi bi-twitter h3"></i>
+      </a>
+      <a href="https://wa.me/+5492966518923" target="_blank" class="text-decoration-none">
+        <i class="bi bi-whatsapp h3"></i>
+      </a>
+    </div>
+  </footer>
+  <!-- JavaScript de Bootstrap 5 -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/strongpass.js"></script>
+  <script>
+    // Obtener el año actual
+    var currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+  </script>
+</body>
+
+</html>
